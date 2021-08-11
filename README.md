@@ -1,4 +1,4 @@
-# estudo autodidata
+# Estudo Clojure
 
 Essa abordagem tem muitos exemplos de código simples e é extremamente útil porque posso encontrar respostas para essas perguntas com muita facilidade.
 
