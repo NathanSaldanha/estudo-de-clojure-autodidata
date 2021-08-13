@@ -1,6 +1,16 @@
-# estudo autodidata
+# Estudo Clojure
 
-A Clojure library designed to ... well, that part is up to you.
+Essa abordagem tem muitos exemplos de código simples e é extremamente útil porque posso encontrar respostas para essas perguntas com muita facilidade.
+
+- Como posso definir uma função?
+
+- Qual é a sintaxe para if e else?
+
+- O linguagem é compatível com a interpolação de strings?
+
+- Quais escopos de variáveis ​​estão disponíveis?
+
+Essas são perguntas muito básicas, mas o suficiente para começar a hackear com as novas linguagens.
 
 ## Usage
 
