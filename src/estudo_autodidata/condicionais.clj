@@ -30,3 +30,29 @@
     "sem números positivo"))
 
 (println (positive-number [-1 -2 1 2]))
+
+;Existe também o "case" que funciona praticamente da mesma forma que o de outras linguagens de programação.
+;"case" compara o valor com cada condição com "=" e avalia a expressão no ramo correspondente.
+(defn case-test-1 [n]
+  (case n
+    1 "n is 1"
+    2 "n is 2"
+    "n is other"))
+
+(println (case-test-1 1))
+(println (case-test-1 2))
+(println (case-test-1 3))
+
+;Quando você deseja fazer algo semelhante, casemas deseja escrever seu próprio caso de teste em vez de =, você pode usar cond.
+;Você pode escrever um caso de teste diferente em cada ramo com cond.
+;Você usa :else palavra-chave para o caso padrão.
+(defn cond-test
+  [n]
+  (cond
+    (= n 1) "n é 1"
+    (and (> n 3) (< n 10)) "n é maior que 3 e menor que 10"
+    :else "n é outro"))
+
+(println (cond-test 1))
+(println (cond-test 5))
+(println (cond-test 15))
