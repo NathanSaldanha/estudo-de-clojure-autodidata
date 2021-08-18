@@ -26,8 +26,20 @@
   [num]
   (contains? conjunto num))
 
+;Para verificar se um conjunto faz parte de outro conjunto
+(defn subconjunto?
+  [conj1 conj2]
+  (clojure.set/subset? conj1 conj2))
+
+;Para verificar se um conjunto inclui outro conjunto
+(defn superconjunto?
+  [conj1 conj2]
+  (clojure.set/superset? conj1 conj2))
+
 (println "Conjunto:" conjunto)
 (println "Adiciono valor ao conjunto:" (adiciono-a-conjunto 4))
 (println "Adiciono valor do conjunto:" (removo-valor 3))
 (println "Ordenar valor do conjunto:" (ondenar 4))
 (println "Contem o valor no conjunto?" (contem-valor? 3))
+(println "Conjunto faz parte do outro conjunto?" (subconjunto? conjunto-novo conjunto))
+(println "Conjunto inclui outro conjunto?" (subconjunto? conjunto-novo conjunto))
