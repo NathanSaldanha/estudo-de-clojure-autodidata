@@ -6,7 +6,7 @@ Essa abordagem tem muitos exemplos de código simples e é extremamente útil po
 
 - Qual é a sintaxe para if e else?
 
-- O linguagem é compatível com a interpolação de strings?
+- A linguagem é compatível com a interpolação de strings?
 
 - Quais escopos de variáveis ​​estão disponíveis?
 
