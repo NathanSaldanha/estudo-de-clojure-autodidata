@@ -1,6 +1,6 @@
 (ns estudo-autodidata.sequenciadores)
 
-(def vetores [10 2 3 4])
+(def vetores [10 2 3 4 1])
 
 (def vetor-animal ["cat" "dog" "horse"])
 
@@ -25,9 +25,21 @@
   [vetor]
   (doseq [elemento vetor] (println elemento)))
 
+;Pode-se remover os elementos que correspondem à regra especificada em uma sequência filter.
+;Aqui está um exemplo para remover números pares e impares de uma sequência.
+(defn filtro-pares
+  [vetor]
+  (filter even? vetor))
+
+(defn filtro-impares
+  [vetor]
+  (filter odd? vetor))
+
 (println "Incrementando cada elemento:" (incrementar-elemento vetores))
 ;Utilizando uma função anonima
 (println "Incrementando cada elemento funcao anonima:" (map (fn [x] (inc (val x))) {:a 1 :b 2 :c 3}))
 (println "Somando cada elemento:" (somar-elemento vetores))
 (println "Subtrair cada elemento:" (subtrair-elemento vetores))
 (pecorrendo-elemento vetor-animal)
+(println "Mostrando apenas numeros pares:" (filtro-pares vetores))
+(println "Mostrando apenas numeros impares:" (filtro-impares vetores))
